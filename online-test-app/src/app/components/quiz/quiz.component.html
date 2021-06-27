@@ -1,0 +1,56 @@
+<!-- <p> Alhamdhulillaahi rabbil aalameen quiz works!</p> -->
+
+ <div class="card text-center" id = "mainDivId">
+    <div class="card-header">
+      <h3>Give Your Test Here </h3>
+    </div>
+    <div class="card-body">
+    
+            <div id="wrappingDiv" *ngFor="let quiz of quizList">
+                <form #form="ngForm" >
+                <div class="wrappingDivClass">
+
+            <div class="mb-3">
+               <input type="text" name="question"  class="form-control" id="question" [(ngModel)]="quiz.question"  >
+               <input type="hidden" class="form-control" [name]="quiz.quizId" [value]="quiz.quizId" ngModel>
+            </div>
+            <h4 style="float: left;">Options</h4>
+            <div class="optionsDiv">
+                
+            <div class="form-check" style="float: left;"  >
+               a) <input  type="radio" [name]="quiz.quizNumber" [value]="quiz.option1" ngModel ><span>{{quiz.option1}}</span>
+            </div>
+            
+            <div class="form-check" style="float: left;" >
+               b) <input  type="radio" [name]="quiz.quizNumber" [value]="quiz.option2" ngModel><span>{{quiz.option2}}</span>
+            </div>
+            
+            <div class="form-check" style="float: left;" >
+               c)<input  type="radio" [name]="quiz.quizNumber" [value]="quiz.option3" ngModel ><span>{{quiz.option3}}</span>
+            </div>
+            
+            <div class="form-check" style="float: left;" >
+               d)<input  type="radio" [name]="quiz.quizNumber" [value]="quiz.option4" ngModel ><span>{{quiz.option4}}</span>
+            </div>
+        </div>
+     
+
+    </div>
+
+    <div class="mb-3" style="float: right;">
+                
+        <!-- <input type="submit" (click)="addAnswers()"  class="btn btn-success" id=""  > -->
+         <input type="submit" (click)="addAnswers()"  class="btn btn-success" id=""  >
+        </div>
+    </form>      
+        </div>
+     
+  
+      
+    </div>
+    <div class="card-footer text-muted">
+        
+        <a routerLink ="/result"class="btn btn-primary">Result</a>
+    </div>
+  </div>  
+

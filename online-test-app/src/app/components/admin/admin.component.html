@@ -1,0 +1,49 @@
+<!-- <p>Alhamdhulillahi Rabbil Aalameen admin works!</p> -->
+<div class="card text-center" id = "mainDivId">
+    <div class="card-header">
+        <a routerLink ="addQuestions" class="btn btn-primary">Add Questions</a>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <!-- <th>Quiz Id</th> -->
+                    <th> Quiz Number</th>
+                    <th> Question</th>
+                    <th> Option</th>
+                    <th> Option</th>
+                    <th> Option</th>
+                    <th> Option</th>
+                    <th> Answer</th>
+                    <th> Actions</th>
+                 
+                  
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let quiz of quizList">
+        
+                    <td>{{ quiz.quizNumber }}</td>
+                    <td>{{ quiz.question }}</td>
+                    <td>{{ quiz.option1 }}</td>
+                    <td>{{ quiz.option2 }}</td>
+                    <td>{{ quiz.option3 }}</td>
+                    <td>{{ quiz.option4 }}</td>
+                    <td>{{ quiz.answer }}</td>
+                    <td> <a href="" class="btn btn-warning">Edit</a></td>
+                    <td><button class="btn btn-danger">Delete</button></td>
+                  
+                </tr>
+        
+            </tbody>
+        
+        </table>
+        
+ 
+      
+    </div>
+    <div class="card-footer text-muted">
+
+        <a  routerLink ="/quiz" class="btn btn-primary">Back</a>
+    </div>
+  </div>

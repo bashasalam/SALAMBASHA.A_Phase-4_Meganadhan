@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "quizId": 1001,
+      "question": "Kiran Bedi received Magsaysay Award for government service in?",
+      "option1": 1992,
+      "option2": 1993,
+      "option3": 1994,
+      "option4": 1995,
+      "answer": 1994,
+      "quizNumber": 1
+    },
+    {
+      "quizId": 1002,
+      "question": "Logarithm tables were invented by",
+      "option1": "John Napier",
+      "option2": "John Doe",
+      "option3": "John Harrison",
+      "option4": "John Douglas",
+      "answer": "John Napier",
+      "quizNumber": 2
+    },
+    {
+      "quizId": 1003,
+      "question": "With which sport is the Jules Rimet trophy associated?",
+      "option1": "Basketball",
+      "option2": "Football",
+      "option3": "Hockey",
+      "option4": "Golf",
+      "answer": "Football",
+      "quizNumber": "3"
+    },
+    {
+      "quizId": 1004,
+      "question": "Joule is the unit of",
+      "option1": "temperature",
+      "option2": "pressure",
+      "option3": "energy",
+      "option4": "heat",
+      "answer": "energy",
+      "quizNumber": "4"
+    },
+    {
+      "quizId": 1005,
+      "question": "Jaspal Rana is associated with which of the following games?",
+      "option1": "Swimming",
+      "option2": "Archery",
+      "option3": "Shooting",
+      "option4": "Weightlifting",
+      "answer": "Shooting",
+      "quizNumber": "5"
+    }
+  ]
+}

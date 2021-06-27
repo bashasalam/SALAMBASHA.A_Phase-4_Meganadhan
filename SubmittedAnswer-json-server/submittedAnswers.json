@@ -1,0 +1,36 @@
+{
+  "submittedAnswers": [
+
+    {
+      "quizId": 1001,
+      "option":1995,
+      "quizNumber": 1
+      
+    },
+    {
+      "quizId": 1002,
+      "option":"John Napier",
+      "quizNumber": 2
+
+    },
+    {
+      "quizId": 1003,
+      "option":"Football",
+      "quizNumber": 3
+
+    },
+    { 
+       "quizId": 1004,
+      "option":"energy",
+      "quizNumber": 4
+
+    },
+    {
+      "quizId": 1005,
+      "option":"Shooting",
+      "quizNumber": 5
+    }
+    
+      
+  ]
+}

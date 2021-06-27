@@ -1,0 +1,54 @@
+<!-- <p> Alhamdhulillaahi rabbil aalameen review works!</p> -->
+
+    <div class="card text-center" id = "mainDivId">
+       <div class="card-header">
+         <h3> Review Your Answers </h3>
+       </div>
+       <div class="card-body">
+       
+               <div id="wrappingDiv" *ngFor="let quiz of quizList">
+             
+                   <div class="wrappingDivClass">
+   
+               <div class="mb-3">
+                   
+               <input type="text"  class="form-control" id="question" [value]="quiz.question" >
+               </div>
+               <h4 style="float: left;">Options</h4>
+               <div class="optionsDiv">
+                   
+               <div class="form-check" style="float: left;"  >
+                  a) <input  type="radio" name="option" id="option1" [value]="quiz.option1" ><span>{{quiz.option1}}</span>
+               </div>
+               
+               <div class="form-check" style="float: left;" >
+                  b) <input  type="radio" name="option" id="option1" [value]="quiz.option2" ><span>{{quiz.option2}}</span>
+               </div>
+               
+               <div class="form-check" style="float: left;" >
+                  c)<input  type="radio" name="option" id="option1" [value]="quiz.option3" ><span>{{quiz.option3}}</span>
+               </div>
+               
+               <div class="form-check" style="float: left;" >
+                  d)<input  type="radio" name="option" id="option1" [value]="quiz.option4" ><span>{{quiz.option4}}</span>
+               </div>
+           
+           </div>
+           <div class="mb-3">
+            <input type="text"  class="form-control" id="question" [value]="quiz.answer" style="background-color:greenyellow;">
+         </div>
+   
+       </div>
+           </div>
+           <div class="mb-3">
+                   
+              
+               </div>
+     
+         
+       </div>
+       <div class="card-footer text-muted">
+           <!-- <input type="submit"  class="btn btn-success" id="question"  > -->
+           <a routerLink ="/quiz" class="btn btn-primary">Back</a>
+       </div>
+     </div>  
